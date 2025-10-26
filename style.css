@@ -1,0 +1,51 @@
+.logo-container {
+  /* This is the magic! It aligns children side-by-side. */
+  display: flex;
+  
+  /* This vertically centers the text with the logo. */
+  align-items: center; 
+  
+  /* This adds a nice space between the logo and the text. */
+  gap: 15px; 
+}
+
+/* This overrides the 500px width from your HTML */
+.logo-container .logo {
+  width: 80px; 
+  height: auto; /* Keeps the aspect ratio correct */
+}
+
+/* Optional: Removes default margin from the heading */
+.logo-container h1 {
+  margin: 0;
+  font-size: 24px; /* Example font size */
+}
+
+body {
+    background-color: #f4f4f4; /* Slightly gray */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvrial, sans-serif;
+    /* Removes the default white border around the page */
+    margin: 0; 
+    padding: 0;
+}
+.header {
+  display: flex; /* Aligns children side-by-side */
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px; 
+}  
+.logo {
+    width: 320px; 
+    height: auto; 
+}
+.header h1 {
+  margin: 0;
+  font-size: 48px; /* Example font size */
+}
+ .content {
+    /* Adds some padding to your main text content */
+    padding: 30px;
+    
+    /* Centers the text in this section */
+    text-align: center;
+}

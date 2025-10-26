@@ -1,3 +1,51 @@
-<html>
-Gassarvets hemsida 
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gassarvets hemsida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="header">
+        
+  <picture>
+    <source srcset="bilder/gassarvet_logo.avif" type="image/avif">
+    <source srcset="bilder/gassarvet_logo.png" type="image/png">
+    <img src="bilder/gassarvets_logo.png" alt="Gassarvets logo" class="logo">
+        </picture>
+<nav class="main-nav">
+  <ul>
+    <li><a href="#detta-hander">Detta händer</a></li>
+    <li><a href="historik.html">Historik</a></li>
+    <li><a href="bilder.html">Bilder</a></li>
+    <li><a href="lankar.html">Länkar</a></li>
+  </ul>
+</nav>        
+    </header>
+
+<main class="content">
+  <p>
+    <img src="bilder/Gassarvet_vinter.png" alt="Gassarvets logo" height="400px">
+  </p>
+
+  <section id="detta-hander">
+    <h2>Detta händer</h2>
+    <div id="detta-hander-innehall"></div> 
+
+    <script>
+      fetch('handelser/handelser.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('detta-hander-innehall').innerHTML = data;
+    });
+    </script>
+  </section>
+
+  </div>
+</main>
+
+</body>
 </html>
+
