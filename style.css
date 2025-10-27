@@ -14,16 +14,19 @@ body {
     display: block;
     margin: 0 auto;
 }
-@media (max-width: 600px) {
-    .big-picture {
-	height:200px /* Makes the image smaller for smaller screens. */
-    }
-}
 .top-bar {
     height: 10px;
     width: 600px;
     background-color: #004a99;
     margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .big-picture {
+	height:200px; /* Makes the image smaller for smaller screens. */
+    }
+    .top-bar {
+	width: 400px;
+    }
 }
 .header {
   display: flex; /* Aligns children side-by-side */
