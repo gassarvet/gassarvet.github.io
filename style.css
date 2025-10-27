@@ -1,25 +1,4 @@
-.logo-container {
-  /* This is the magic! It aligns children side-by-side. */
-  display: flex;
-  
-  /* This vertically centers the text with the logo. */
-  align-items: center; 
-  
-  /* This adds a nice space between the logo and the text. */
-  gap: 15px; 
-}
 
-/* This overrides the 500px width from your HTML */
-.logo-container .logo {
-  width: 80px; 
-  height: auto; /* Keeps the aspect ratio correct */
-}
-
-/* Optional: Removes default margin from the heading */
-.logo-container h1 {
-  margin: 0;
-  font-size: 24px; /* Example font size */
-}
 
 body {
     background-color: #f4f4f4; /* Slightly gray */
@@ -27,6 +6,24 @@ body {
     /* Removes the default white border around the page */
     margin: 0; 
     padding: 0;
+}
+.big-picture {
+    height: 400px;
+    width: auto;
+    max-width: 100%;  /* VIKTIG: Ser till att bilden krymper om skärmen blir smalare än bilden */
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .big-picture {
+	height:200px /* Makes the image smaller for smaller screens. */
+    }
+}
+.top-bar {
+    height: 10px;
+    width: 600px;
+    background-color: #004a99;
+    margin: 0 auto;
 }
 .header {
   display: flex; /* Aligns children side-by-side */
@@ -40,9 +37,9 @@ body {
 }
 .header h1 {
   margin: 0;
-  font-size: 48px; /* Example font size */
+  font-size: 48px; 
 }
- .content {
+.content {
     /* Adds some padding to your main text content */
     padding: 30px;
     
