@@ -92,3 +92,8 @@ body {
     /* Centers the text in this section */
     text-align: center;
 }
+.brodtext {
+    /* Adds some padding to your main text content */
+    padding: 30px;
+    text-align: left;
+}
