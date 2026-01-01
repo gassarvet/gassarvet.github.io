@@ -1,0 +1,51 @@
+
+
+body {
+    background-color: #f4f4f4; /* Slightly gray */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvrial, sans-serif;
+    /* Removes the default white border around the page */
+    margin: 0; 
+    padding: 0;
+}
+.big-picture {
+    height: 400px;
+    width: auto;
+    max-width: 100%;  /* VIKTIG: Ser till att bilden krymper om skärmen blir smalare än bilden */
+    display: block;
+    margin: 0 auto;
+}
+.top-bar {
+    height: 10px;
+    width: 600px;
+    background-color: #004a99;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .big-picture {
+	height:200px; /* Makes the image smaller for smaller screens. */
+    }
+    .top-bar {
+	width: 400px;
+    }
+}
+.header {
+  display: flex; /* Aligns children side-by-side */
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px; 
+}  
+.logo {
+    width: 320px; 
+    height: auto; 
+}
+.header h1 {
+  margin: 0;
+  font-size: 48px; 
+}
+.content {
+    /* Adds some padding to your main text content */
+    padding: 30px;
+    
+    /* Centers the text in this section */
+    text-align: center;
+}
