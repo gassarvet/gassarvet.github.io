@@ -55,7 +55,7 @@ body {
     grid-template-columns: 1fr; /* Mobile: 1 column */
     gap: 15px;                 /* Space between pictures */
     padding: 15px;
-    max-width: 1200px;         /* Prevents images from getting TOO huge on massive monitors */
+    max-width: 600px;         /* Prevents images from getting TOO huge on massive monitors */
     margin: 0 auto;
 }
 
