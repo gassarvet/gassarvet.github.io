@@ -48,7 +48,7 @@ body {
 }
 
 
-/* --- Fotogalleri  --- */
+/* ----------------- Fotogalleri  ------------------ */
 
 /* --- Masonry Style --- */
 .gallery-container {
@@ -78,7 +78,7 @@ body {
 }
 
 
-/* --- Innehåll  --- */
+/* ----------------- Innehåll  ------------------ */
 
 .header h1 {
   margin: 0;
@@ -140,4 +140,63 @@ body {
 
 .gallery-item:hover {
     transform: scale(1.02); /* Slight "lift" effect on hover */
+}
+
+/* ----------------- Innehåll, två kolumner ------------------ */
+
+/* Container for the text and image side-by-side */
+.feature-section {
+    display: flex;
+    flex-direction: column; /* Default for mobile: stack vertically */
+    gap: 30px;
+    padding: 20px;
+    max-width: 900px; /* Matches your gallery width */
+    margin: 40px auto;
+    align-items: flex-start;
+}
+
+/* The text column */
+.feature-text {
+    flex: 1; /* Takes up equal space */
+    line-height: 1.6;
+}
+
+/* The image and caption container */
+.feature-media {
+    flex: 1; /* Takes up equal space */
+    width: 100%;
+}
+
+/* Adds space between multiple figures in the right column */
+.feature-media figure {
+    margin: 0 0 20px 0; /* 20px bottom margin */
+}
+
+/* Remove margin from the last image so the bottom aligns perfectly */
+.feature-media figure:last-child {
+    margin-bottom: 0;
+}
+
+
+.feature-media img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.feature-media figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Desktop Switch: Side-by-side when screen is wider than 600px */
+@media (min-width: 601px) {
+    .feature-section {
+        flex-direction: row; /* Switch to side-by-side */
+        align-items: flex-start;  /* Centers text vertically relative to the image */
+    }
 }
