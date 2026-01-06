@@ -8,9 +8,10 @@
 
 <h2>Bilder från förr</h2>
 
+<body>
 <div class="gallery-container">
    <img src="bilder/Fornby_byskola_-_exteriören_[kompr].jpg" class="gallery-item" class="gallery-item"/>
-   <img src="bilder/Fornby_byskola_-_eleverna_vårterminen_1916_[kompr].jpg" class="gallery-item" class="gallery-item"/>
+<img src="bilder/Mons skola - Nedanför lärarinnan Lisbetes MARGIT [kompr].jpg" class="gallery-item"/>   <img src="bilder/Fornby_byskola_-_eleverna_vårterminen_1916_[kompr].jpg" class="gallery-item" class="gallery-item"/>
    <img src="bilder/Pojkar i Gassarvet sittande på gärdsgård [kompr].jpg" class="gallery-item" class="gallery-item"/>
    <img src="bilder/Gassarvets_ungdomar_1928.jpg" class="gallery-item"/>
    <img src="bilder/Gassarvsflickor.jpg" class="gallery-item"/>
@@ -21,4 +22,49 @@
    <img src="bilder/Foto_2021-03-30_123239.jpg" class="gallery-item"/>
    <img src="bilder/Personal_på_handskfabriken.jpg" class="gallery-item"/>
    <img src="bilder/LisbetesAnna.jpg" class="gallery-item"/>
-  </div>
+   <img src="bilder/Lisbetes MARIA & ANNA, Göras MARIA samt Back KARIN[313643].jpg" class="gallery-item"/>
+   <img src="bilder/Lisbetes ERIK & Back KARIN Andersdotter som brudpar [kompr] (1).jpg" class="gallery-item"/>
+   <img src="bilder/Gassarvet gamla tider-006.jpg" class="gallery-item"/>
+   <img src="bilder/Gassarvet gamla tider-007.jpg" class="gallery-item"/>
+   <img src="bilder/DSC00976.jpg" class="gallery-item"/>
+   <img src="bilder/DSC00974.jpg" class="gallery-item"/>
+   <img src="bilder/Fart Göran, Marcus Arne & Rune samt Lassas Ingvar m fl [kompr].jpg" class="gallery-item"/>
+   <img src="bilder/Farth_Maria_Ersdotter_&_Land_Anders_Andersson_[kompr].jpg" class="gallery-item"/>
+   <img src="bilder/Land_Pers_Anders_Perssons_fruktodling_i_Gassarvet_[kompr].jpg" class="gallery-item"/>
+   <img src="bilder/Land_Pers_Anders_Perssons_två_äldsta_barn_[kompr].jpg" class="gallery-item"/>
+   <img src="bilder/Land_Pers_Johan_Andersson_[kompr].jpg" class="gallery-item"/>
+   <img src="bilder/Land_Per_Andersson_Gassarvet_[kompr].jpg" class="gallery-item"/>
+   <img src="bilder/Land Pers JOHAN & Lindkvist Oskar spelar på Lisbetesgården (1).jpg" class="gallery-item"/>
+   <img src="bilder/Land_Pers_Anders_Persson_med_hustru_Carin,_barn_&_barnbarn_[kompr].jpg" class="gallery-item"/>
+   <img src="bilder/Göras Anders Andersson f. 1912-10-28 med maka Astrid m fl - retuscherad textad kompr.jpg" class="gallery-item"/>
+   <img src="bilder/Göras Anders Andersson, f.1866-09-26.jpg" class="gallery-item"/>
+   <img src="bilder/Göras MARGIT Müller, Göras KARIN & Göras SIGNE m fl[314942].jpg" class="gallery-item"/>
+   <img src="bilder/Högvalls_Carin,_Land_Pers_Johans_son_Erik,_Johans_hustru_Anna_&_Johans_syster_Anna_[kompr].jpg" class="gallery-item"/>
+   <img src="bilder/Karin Danielsson & Göras Anders 384 (1).jpg" class="gallery-item"/>
+</div>
+
+<p>
+  <img src="bilder/Per_Högvall_50.avif" class="big_picture"/>
+  <img src="bilder/Torkstugan_i_Land_Pers_hage_i_Gassarvet_[kompr]" class="big_picture"/>
+  
+
+<div id="lightbox" onclick="this.style.display='none'">
+    <span id="close-btn">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<script>
+    // Select all images with the gallery-item class
+    const images = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            lightbox.style.display = 'flex'; // Show the lightbox
+            lightboxImg.src = image.src;      // Set the zoom image to the clicked image
+        });
+    });
+</script>
+</body>
+</html>
