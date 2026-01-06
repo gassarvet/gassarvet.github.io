@@ -50,43 +50,41 @@ body {
 
 /* --- Fotogalleri  --- */
 
-/* --- Base Styles (Mobile) --- */
+/* 1. The Container - This is the "Box" the pictures sit in */
 .gallery-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 column on mobile */
     gap: 15px;
     padding: 15px;
-    margin: 0 auto;
-    max-width: 100%; /* Take full width on phones */
+    margin: 0 auto !important; /* Forces it to stay centered */
+    width: 95%;               /* Slight gap on the sides for mobile */
+    max-width: 600px;          /* Mobile default max-width */
+    
+    /* TEMP: Uncomment the line below to see the container's area in red */
+     background-color: rgba(255, 0, 0, 0.1); 
 }
 
+/* 2. The Items - These stay inside the container */
 .gallery-item {
-    width: 100%;
+    width: 100%;       /* Fills the column width provided by the container */
+    max-width: 100%;   /* Never grows larger than its parent */
     height: auto;
     display: block;
     object-fit: cover;
     border-radius: 8px;
-    max-width: 100%;    /* Ensures it doesn't overflow container */
-    margin: 0 auto;     /* Centers it if it's smaller than the column */
 }
 
-/* --- Desktop Styles (Wider than 600px) --- */
+/* 3. The Desktop Switch */
 @media (min-width: 601px) {
     .gallery-container {
-        grid-template-columns: repeat(2, 1fr); 
-        max-width: 900px; /* This gives enough room for two 440px images side-by-side */
-	margin: 0 auto;
-    }
-
-    .gallery-item {
-        max-width: 500px; 
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        max-width: 900px;                      /* NOW it grows to 900px */
     }
 
     .full-width {
         grid-column: span 2;
     }
 }
-
 
 /* --- Innehåll  --- */
 
