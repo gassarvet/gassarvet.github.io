@@ -77,6 +77,20 @@ body {
     }
 }
 
+/* Style for the logos specifically */
+.logo-item {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Give the logos a "clickable" feel on hover */
+.gallery-link:hover .logo-item {
+    opacity: 0.8;
+    transform: translateY(-5px); /* Subtle lift effect */
+}
 
 /* ----------------- Innehåll  ------------------ */
 
